@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D660E21826A7E5FE004BB870 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D660E21726A7E5FE004BB870 /* AppDelegate.swift */; };
 		D660E21A26A7E5FF004BB870 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D660E21926A7E5FF004BB870 /* GameScene.sks */; };
-		D660E21C26A7E5FF004BB870 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D660E21B26A7E5FF004BB870 /* Actions.sks */; };
 		D660E21E26A7E5FF004BB870 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D660E21D26A7E5FF004BB870 /* GameScene.swift */; };
 		D660E22026A7E5FF004BB870 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D660E21F26A7E5FF004BB870 /* GameViewController.swift */; };
 		D660E22326A7E5FF004BB870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D660E22126A7E5FF004BB870 /* Main.storyboard */; };
@@ -20,7 +19,6 @@
 		D660E21426A7E5FE004BB870 /* ShootingRange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootingRange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D660E21726A7E5FE004BB870 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D660E21926A7E5FF004BB870 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		D660E21B26A7E5FF004BB870 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		D660E21D26A7E5FF004BB870 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		D660E21F26A7E5FF004BB870 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D660E22226A7E5FF004BB870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 			children = (
 				D660E21726A7E5FE004BB870 /* AppDelegate.swift */,
 				D660E21926A7E5FF004BB870 /* GameScene.sks */,
-				D660E21B26A7E5FF004BB870 /* Actions.sks */,
 				D660E21D26A7E5FF004BB870 /* GameScene.swift */,
 				D660E21F26A7E5FF004BB870 /* GameViewController.swift */,
 				D660E22126A7E5FF004BB870 /* Main.storyboard */,
@@ -130,7 +127,6 @@
 				D660E22326A7E5FF004BB870 /* Main.storyboard in Resources */,
 				D660E21A26A7E5FF004BB870 /* GameScene.sks in Resources */,
 				D660E22526A7E5FF004BB870 /* Assets.xcassets in Resources */,
-				D660E21C26A7E5FF004BB870 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = frostfell.ShootingRange;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -311,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = frostfell.ShootingRange;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
