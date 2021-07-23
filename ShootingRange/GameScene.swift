@@ -129,7 +129,7 @@ final class GameScene: SKScene {
 	}
 
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-		guard !isReloading else { return }
+		guard !isReloading, time > 0 else { return }
 		guard let touch = touches.first else { return }
 
 		let location = touch.location(in: self)
@@ -144,8 +144,10 @@ final class GameScene: SKScene {
 		bullets -= 1
 
 		if tappedNode?.name == "bad" {
+			drawBlood(at: location, isZombie: true)
 			score += 1
 		} else if tappedNode?.name == "good" {
+			drawBlood(at: location, isZombie: false)
 			score -= 5
 		} else if tappedNode?.name == "background" {
 			return
@@ -153,9 +155,15 @@ final class GameScene: SKScene {
 		tappedNode?.removeFromParent()
 	}
 
+	private func drawBlood(at position: CGPoint, isZombie: Bool) {
+		guard let blood = SKEmitterNode(fileNamed: "\(isZombie ? "Zombie" : "")Blood") else { return }
+		blood.position = position
+		addChild(blood)
+	}
+
 	private func gameOver() {
 		clock?.invalidate()
 		timer?.invalidate()
-		addChild(makeLabelNode(text: "Game Over", position: CGPoint(x: 400, y: 384)))
+		timeLabel.text = "Game Over"
 	}
 }
